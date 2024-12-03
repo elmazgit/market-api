@@ -1,9 +1,16 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const cors = require('cors');
+const PORT = 3001;
+
+app.use(cors());  // Enable CORS for all routes
 
 app.get('/', (req, res) => {
-  res.send('Hello World from Express!');
+  res.send('Hello From Backend!');
+});
+
+app.get('/api/greet', (req, res) => {
+  res.json({ message: 'Hello from backend' });
 });
 
 app.listen(PORT, () => {
