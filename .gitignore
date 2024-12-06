@@ -1,0 +1,40 @@
+# Node.js dependencies
+/node_modules/
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Environment files
+.env
+.env.* 
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# npm package lock
+package-lock.json
+yarn.lock
+
+# Build and temporary files
+/dist
+/build
+/.next
+/.serverless
+
+# Optional: PM2 process files
+pids
+*.pid
+*.seed
+
+# Coverage directory used by testing tools
+/coverage
+
+# Database files (if applicable)
+*.sqlite
+*.db
+
+/.vscode
